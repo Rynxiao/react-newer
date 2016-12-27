@@ -91,7 +91,7 @@ npm install babel-preset-react
 babel example.js --presets react --out-dir=build
 ```
 
-* 使用`[webpack]`或者`[Browserify]`之类的编译工具编译（`[Browserify]`没有研究过，下面主要介绍一下简单的`[webpack]`配置，可以参看之前的文档[webpack](http://com)）
+* 使用`[webpack]`或者`[Browserify]`之类的编译工具编译（`[Browserify]`没有研究过，下面主要介绍一下简单的`[webpack]`配置，可以参看之前的文档[webpack](https://github.com/Rynxiao/webpack-test)）
 
 使用`[webpack]`需要配置`[webpack.config.js]`文件，具体如下：
 ```javascript
