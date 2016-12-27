@@ -12,8 +12,6 @@ It is called JSX, and it is a syntax extension to JavaScript. We recommend using
 >
 JSX produces React "elements".
 
--------
-
 意思就是`jsx`语句既不是一个字符串，同时也不是`HTML`，它是`javascript`的扩展。没错，它是一个js文件，只是可以在js文件中直接写html标签，不用加任何标签。例如：
 
 ```javascirpt
@@ -31,8 +29,6 @@ ReactDOM.render(
 );
 ```
 
-------
-
 规则：遇到`[HTML]`以（`<`）开头，遇到代码块以（`{`）开头
 
 官网例子下载地址： [http://reactjs.cn/react/downloads/react-15.3.1.zip](http://reactjs.cn/react/downloads/react-15.3.1.zip)
@@ -40,8 +36,6 @@ ReactDOM.render(
 ## Hello World - 编写一个简单程序
 
 * 直接引入方式, USE CDN
-
-----------
 
 ```javascript
 <div id="root"></div>
@@ -78,8 +72,6 @@ ReactDOM.render(
 
 * 使用`[babel]`提前编译
 
--------
-
 提前将`[jsx]`文件编译成`[js]`文件，在`[html]`文件中单独引入
 
 注意： `babel` 6.0 之前的编译需要全局安装 `babel`， 而高于 6.0 版本的需要全局安装`babel-cli`，具体例子如下：
@@ -100,8 +92,6 @@ babel example.js --presets react --out-dir=build
 ```
 
 * 使用`[webpack]`或者`[Browserify]`之类的编译工具编译（`[Browserify]`没有研究过，下面主要介绍一下简单的`[webpack]`配置，可以参看之前的文档[webpack](http://com)）
-
---------
 
 使用`[webpack]`需要配置`[webpack.config.js]`文件，具体如下：
 ```javascript
@@ -286,7 +276,7 @@ export default React.createClass({
     render() {
         return (
             <div className="App">
-                My name is {this.props.name}, {this.props.age} year's old!
+                <span>My name is {this.props.name}, {this.props.age} years' old!</span>
             </div>
         );
     }
@@ -322,7 +312,7 @@ export default React.createClass({
     render() {
         return (
             <div className="App">
-                My name is {this.props.name}, {this.props.age} year's old!
+                <span>My name is {this.props.name}, {this.props.age} years' old!</span>
             </div>
         );
     }
@@ -482,6 +472,7 @@ export default React.createClass({
 React中的表单分为**受限**组件与**不受限**组件，受限组件受到组件本身控制，需要由`state`来维护，不可随意更改，而不受限组件是由DOM本身控制，可以修改。React官方建议是采用受限组件来进行表单提交。详情可以看这里：
 
 [https://facebook.github.io/react/docs/forms.html](https://facebook.github.io/react/docs/forms.html)
+
 [https://facebook.github.io/react/docs/uncontrolled-components.html](https://facebook.github.io/react/docs/uncontrolled-components.html)
 
 下面是一个例子：
@@ -618,8 +609,11 @@ componentWillReceiveProps: function(nextProps) {
 ## 参考链接
 
 [https://facebook.github.io/react/docs/hello-world.html](https://facebook.github.io/react/docs/hello-world.html)
+
 [http://www.ruanyifeng.com/blog/2015/03/react.html](http://www.ruanyifeng.com/blog/2015/03/react.html)
+
 [http://wiki.jikexueyuan.com/project/react/](http://wiki.jikexueyuan.com/project/react/)
+
 [https://github.com/Rynxiao/react-starter](https://github.com/Rynxiao/react-starter)
 
 
