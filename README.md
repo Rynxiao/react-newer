@@ -276,7 +276,7 @@ export default React.createClass({
     render() {
         return (
             <div className="App">
-                <span>My name is {this.props.name}, {this.props.age} years' old!</span>
+                <span>My name is {this.props.name}, {this.props.age} years old!</span>
             </div>
         );
     }
@@ -312,7 +312,7 @@ export default React.createClass({
     render() {
         return (
             <div className="App">
-                <span>My name is {this.props.name}, {this.props.age} years' old!</span>
+                <span>My name is {this.props.name}, {this.props.age} years old!</span>
             </div>
         );
     }
