@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React without node</title>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <script src="https://unpkg.com/react@15.4.1/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15.4.1/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        ReactDOM.render(
+            <div>Hello world</div>,
+            document.getElementById('root')
+        );
+    </script>
+
+    <script>
+        function ExampleApplication() {
+            // this equals to React.createElement('p', null, 'Hello world');
+            return React.DOM.p(null, "Hello world");
+        }
+
+        // or React.createElement(ExampleApplication);
+        var ExampleApplicationFactory = React.createFactory(ExampleApplication);
+
+        ReactDOM.render(
+            React.createElement(ExampleApplication),
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
