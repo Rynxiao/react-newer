@@ -1,5 +1,14 @@
 # react基础入门
 
+## 运行方式
+
+```javascript
+npm install
+npm start
+
+localhost:3000
+```
+
 ## JSX语法
 
 ```javascript
