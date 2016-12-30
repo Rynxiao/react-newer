@@ -339,7 +339,7 @@ ReactDOM.render(
 // 控制台只会出现一次打印结果，如下
 ```
 
-！[execute-once](./screensnap/execute-once.png)
+![execute-once](./screensnap/execute-once.png)
 
 ## refs(获取真实的DOM元素)
 
